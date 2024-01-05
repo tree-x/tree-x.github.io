@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="3402057907">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="树洞，避风港，家">
+
+
+  <title>家</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+    .tbqy{
+      position: relative;
+
+      height: 200px;
+      background-color: skyblue;
+      background-image: linear-gradient(0deg, rgba(0,0,255,0.5) 0%, rgba(0,128,0,0.5) 100%);
+    }
+    .tbqy h2{
+      text-align: center;
+      color: skyblue;
+      font-size: 45px;
+    }
+    .tbqy h2 span{
+      color: green;
+      font-size: 15px;
+    }
+    .juzhong{
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 200px;
+      height: 200px;
+      overflow: auto;
+    }
+    .juzhong img{
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+    .tbqy .juzhong img:hover{
+      opacity: 1;
+    }
+    .tbqy p{
+      line-height: 60px;
+      margin-left: 30px;
+      width: 155px;
+    }
+    .tbqy .dhl{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 50px;
+      width: 1460px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .tbqy .dhl ul li{
+      list-style: none;
+      margin: 10px 20px 0px 0px;
+    }
+    .tbqy .dhl ul a{
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .tbqy .dhl_right{
+      background-image: linear-gradient(90deg, skyblue 0%, rgba(0,0,255,0.7) 50%, rgba(0,128,0,0.7) 100%);
+      width: 1460px;
+    }
+    .tbqy .dhl ul a:hover{
+      color: black;
+      text-decoration:underline;
+      transition: all 1s;
+    }
+    .tbqy_left li{
+      list-style: none;
+    }
+    .tbqy_left{
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-left: 0;
+      height: 150px;
+      width: 150px;
+    }
+    .tbqy_left ol{
+      padding: 0;
+    }
+    .tbqy_left ol li{
+      margin-top: 20px;
+    }
+    .tbqy_left ol li:nth-child(1){
+      margin-top: 0;
+    }
+    .dhl_left{
+      width: 150px;
+      height: 50px;
+      background-color: black;
+    }
+    .tbqy .dhl .dhl_left a{
+      line-height: 50px;
+      margin-left: 30px; 
+      text-decoration: none; 
+      color: #000000;
+    }
+    .tbqy .dhl .dhl_left a:hover{
+      color: #ffffff;
+      transition: all 1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="tbqy">
+    <div>
+      <h2>欢迎回家<span>这里将是您永远的家</span></h2>
+
+      <p>鼠标滑动显示</p>
+
+      <div class="dhl">
+        <div class="dhl_right">
+          <ul style="display: flex;">
+            <li><a href="#">测试空链接1</a></li>
+            <li><a href="#">测试空链接2</a></li>
+            <li><a href="#">测试空链接3</a></li>
+          </ul>
+        </div> 
+      
+        <div class="dhl_left">
+          <a href="./ftp/a/dc.html">管理员入口</a>
+        </div>
+      </div>
+
+      <div class="juzhong">
+        <img src="https://img.zcool.cn/community/01f90a60bb232f11013eaf70e99e57.jpg@1280w_1l_2o_100sh.jpg" alt="">
+        <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.2MVVl0UZgs3ts6ZrieL5iQHaNJ?w=187&h=333&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+      </div>
+    </div>
+    <div class="tbqy_left">
+      <ol>
+        <li>
+          <a href="./树洞.html">
+            <input type="button" value="卡顿？刷新试试" onclick="alert('刷新成功')">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <input type="button" value="还有疑问？" onclick="alert('页面正在制作中')">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <input type="button" value="还没想好" onclick="alert('还没想好')">
+          </a>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+
+</body>
+</html>

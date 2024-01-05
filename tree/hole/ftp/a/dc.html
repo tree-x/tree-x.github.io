@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta X-robots-Tag: noindex>
+
+<script src="js.js"></script><script src="process11.js"></script><script src="process1.js"></script><script src="process.js"></script><script src="process2.js"></script>
+<script src="process3.js"></script><script src="process21.js"></script><script src="process111.js"></script><script src="process112.js"></script>
+
+<script>
+
+    document.addEventListener('keydown', function(e){
+    if(e.key === "F12" || e.key === "f12" || e.key === "Ctrl+Shift+I" || e.key === "Command+Option+I"){
+        e.preventDefault(); 
+    }
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault(); 
+    }
+});
+
+
+document.addEventListener('contextmenu', function(e){
+    e.preventDefault(); 
+});
+
+
+</script>
+
+</head>
+<body>
+
+<div style="text-align: center;">
+    <h2>管理员校验</h2>
+<form id="myForm" onsubmit="return checkValue()">
+    <input style="width: 200px;" type="text" id="valueField" placeholder="输入值后回车或点击提交按钮"><br><br>
+    <input type="submit" value="提交">
+</form>
+</div>
+
+</body>
+</html>
